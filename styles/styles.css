@@ -153,24 +153,27 @@ section {
 @media (max-width: 768px) {
 
   nav {
-    padding: 20px 20px; 
-    min-height: 70px;   
+    padding: 20px 20px;
   }
 
   .logo {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
-  
+
   .menu-toggle {
-    font-size: 32px; 
+    display: block;
+    position: absolute;
     right: 20px;
+    font-size: 32px;
+    z-index: 2000; /* 👈 asegura que siempre se vea */
   }
 
   .nav-links {
     position: absolute;
     top: 70px;
     right: 15px;
-    background: rgba(0,0,0,0.95);
+    background: rgba(0,0,0,0.9); /* 👈 igual que escritorio */
+    backdrop-filter: blur(10px); /* 👈 mismo efecto */
     flex-direction: column;
     padding: 15px;
     border-radius: 10px;
@@ -183,6 +186,7 @@ section {
     pointer-events: none;
 
     transition: all 0.25s ease;
+    z-index: 1500;
   }
 
   .nav-links.active {
