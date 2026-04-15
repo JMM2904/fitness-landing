@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fitness Landing</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+    <!-- NAV -->
+    <nav>
+  <h2 class="logo">FitGym</h2>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+    <!-- HERO -->
+    <section id="home">
+      <h1>Transform Your Body Today</h1>
+      <p>Join our fitness program and achieve your goals faster</p>
+      <a href="#contact">Get Started</a>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Personal Training</h3>
+          <p>One-on-one coaching</p>
+        </div>
+
+        <div class="card">
+          <h3>Nutrition Plans</h3>
+          <p>Custom meal plans</p>
+        </div>
+
+        <div class="card">
+          <h3>Group Classes</h3>
+          <p>Train with others</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <h2>Pricing</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Basic</h3>
+          <p>29€ / month</p>
+        </div>
+
+        <div class="card">
+          <h3>Standard</h3>
+          <p>49€ / month</p>
+        </div>
+
+        <div class="card">
+          <h3>Premium</h3>
+          <p>79€ / month</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <form class="form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>
