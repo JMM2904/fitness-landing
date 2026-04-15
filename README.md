@@ -19,4 +19,4 @@ This project was created to demonstrate front-end skills for my portfolio and fr
 
 
 ## Live Demo
-https://tuusuario.github.io/tu-repo/
+https://jmm2904.github.io/fitness-landing/
