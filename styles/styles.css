@@ -5,7 +5,10 @@ body {
   color: white;
 }
 
+/* ===================== */
 /* NAV */
+/* ===================== */
+
 nav {
   display: flex;
   align-items: center;
@@ -17,6 +20,7 @@ nav {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  box-sizing: border-box;
 }
 
 .logo {
@@ -46,17 +50,24 @@ nav {
   text-decoration: none;
 }
 
+/* ===================== */
 /* HERO */
+/* ===================== */
+
 #home {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-              url("./img/risen-wang-20jX9b35r_M-unsplash.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+              url("img/risen-wang-20jX9b35r_M-unsplash.jpg") center/cover no-repeat;
 }
 
 #home h1 {
@@ -79,13 +90,20 @@ nav {
   text-decoration: none;
 }
 
+/* ===================== */
 /* SECCIONES */
+/* ===================== */
+
 section {
   padding: 80px 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 
+/* ===================== */
 /* CARDS */
+/* ===================== */
+
 .cards {
   display: flex;
   justify-content: center;
@@ -109,12 +127,14 @@ section {
   filter: brightness(1.1);
 }
 
-/* COLORES CARDS */
 .card:nth-child(1) { background: linear-gradient(135deg, #22c55e, #14532d); }
 .card:nth-child(2) { background: linear-gradient(135deg, #3b82f6, #1e3a8a); }
 .card:nth-child(3) { background: linear-gradient(135deg, #ff3b3b, #b30000); }
 
+/* ===================== */
 /* FORM */
+/* ===================== */
+
 .form {
   display: flex;
   flex-direction: column;
@@ -132,40 +152,41 @@ section {
   color: white;
 }
 
-@media (max-width: 768px) {
+/* ===================== */
+/* MOBILE */
+/* ===================== */
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 
   .menu-toggle {
     display: block;
   }
 
- .nav-links {
-  position: absolute;
-  top: 80px;
-  right: 20px;
-  background: rgba(0,0,0,0.95);
-  flex-direction: column;
-  padding: 15px;
-  border-radius: 10px;
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
 
-  display: flex;
+    display: flex;
+    opacity: 0;
+    transform: translateY(-15px);
+    visibility: hidden;
+    pointer-events: none;
 
-  opacity: 0;
-  transform: translateY(-15px);
-  visibility: hidden;
-  pointer-events: none;
+    transition: all 0.3s ease;
+  }
 
-  transition: all 0.3s ease;
-}
+  .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
 
-.nav-links.active {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
-  pointer-events: auto;
-}
-}
   #home h1 {
     font-size: 2rem;
   }
