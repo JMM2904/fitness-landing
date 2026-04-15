@@ -153,11 +153,17 @@ section {
 @media (max-width: 768px) {
 
   nav {
-    padding: 15px 20px;
+    padding: 20px 20px; 
+    min-height: 70px;   
   }
 
+  .logo {
+    font-size: 1.3rem;
+  }
+  
   .menu-toggle {
-    display: block;
+    font-size: 32px; 
+    right: 20px;
   }
 
   .nav-links {
