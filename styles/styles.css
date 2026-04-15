@@ -66,8 +66,12 @@ nav {
   align-items: center;
   text-align: center;
 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-              url("/fitness-landing/img/risen-wang-20jX9b35r_M-unsplash.jpg") center/cover no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url("/fitness-landing/img/risen-wang-20jX9b35r_M-unsplash.jpg") !important;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 #home h1 {
