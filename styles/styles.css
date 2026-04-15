@@ -140,25 +140,29 @@ section {
     display: block;
   }
 
-  .nav-links {
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    background: rgba(0,0,0,0.95);
-    flex-direction: column;
-    padding: 15px;
-    border-radius: 10px;
-    display: none;
-    opacity: 0;
-    transform: translateY(-15px);
-    transition: all 0.3s ease;
-  }
+ .nav-links {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background: rgba(0,0,0,0.95);
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  opacity: 0;
+  transform: translateY(-15px);
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
 
   .nav-links.active {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-  }
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
 }
   #home h1 {
     font-size: 2rem;
