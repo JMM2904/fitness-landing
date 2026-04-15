@@ -61,7 +61,7 @@ nav {
 #home {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-              url('/img/risen-wang-20jX9b35r_M-unsplash.jpg') center/cover;
+              url("img/risen-wang-20jX9b35r_M-unsplash.jpg") center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
