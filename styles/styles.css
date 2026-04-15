@@ -54,7 +54,7 @@ nav {
   gap: 25px;
 }
 
-/* ===================== BOTONES UNIFICADOS ===================== */
+/* ===================== BOTONES ===================== */
 
 .nav-links a,
 .form button {
@@ -67,21 +67,6 @@ nav {
   cursor: pointer;
   font-size: 1rem;
   display: inline-block;
-}
-
-#home a {
-  font-size: 1.4rem;
-  padding: 18px 38px;
-  margin-top: 35px;
-}
-
-/* ===================== HOVER GLOBAL ===================== */
-
-.nav-links a:hover,
-#home a:hover,
-.form button:hover {
-  background: #e63232;
-  transform: translateY(-2px);
 }
 
 /* ===================== HERO ===================== */
@@ -97,6 +82,8 @@ nav {
   align-items: center;
   text-align: center;
 
+  gap: 15px; /* 👈 clave para que se note el spacing */
+
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
     url("/fitness-landing/img/risen-wang-20jX9b35r_M-unsplash.jpg");
 
@@ -107,13 +94,34 @@ nav {
 
 #home h1 {
   font-size: 3.5rem;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 #home p {
   font-size: 1.3rem;
-  margin-bottom: 20px;
+  margin: 0;
   opacity: 0.9;
+}
+
+/* 🔥 BOTÓN HERO (AHORA SÍ SE NOTA) */
+
+#home a {
+  font-size: 1.5rem;
+  padding: 20px 42px;
+  border-radius: 10px;
+  background: #ff3b3b;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* ===================== HOVER ===================== */
+
+.nav-links a:hover,
+#home a:hover,
+.form button:hover {
+  background: #e63232;
+  transform: translateY(-2px);
 }
 
 /* ===================== SECCIONES ===================== */
